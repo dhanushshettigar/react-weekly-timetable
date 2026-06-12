@@ -1,6 +1,6 @@
 import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { ThemeProvider, createTheme, CssBaseline, Container, Box, Tabs, Tab, Paper, Typography } from "@mui/material";
+import { ThemeProvider, createTheme, CssBaseline, Container, Box, Tabs, Tab, Paper, Typography, Stack, Button, Divider } from "@mui/material";
 import { Timetable } from "./index";
 
 // ============================================================================
@@ -480,6 +480,33 @@ const MainApp = () => {
 ✓ Responsive design works on different screen sizes`}
         </Typography>
       </Paper>
+
+      <Paper sx={{ p: 3, mt: 3, backgroundColor: "#f5f5f5" }}>
+        <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+          📦 Installation
+        </Typography>
+        <Typography variant="body2" sx={{ fontFamily: "monospace", backgroundColor: "#e0e0e0", p: 1.5, borderRadius: 1, mb: 3 }}>
+          npm install react-weekly-timetable
+        </Typography>
+
+        <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+          🔗 Links
+        </Typography>
+        <Stack direction="row" spacing={2} sx={{ mb: 3 }}>
+          <Button variant="outlined" size="small" onClick={() => window.open("https://www.npmjs.com/package/react-weekly-timetable")}>
+            npm Package
+          </Button>
+          <Button variant="outlined" size="small" onClick={() => window.open("https://github.com/dhanushshettigar/react-weekly-timetable")}>
+            GitHub
+          </Button>
+        </Stack>
+
+        <Divider sx={{ my: 2 }} />
+
+        <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          Built with ❤️ by <strong>Dhanush</strong> · MIT License
+        </Typography>
+      </Paper>
     </Container>
   );
 };
@@ -491,13 +518,4 @@ createRoot(document.getElementById("root")!).render(
       <MainApp />
     </ThemeProvider>
   </StrictMode>,
-);
-
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <MainApp />
-    </ThemeProvider>
-  </StrictMode>
 );

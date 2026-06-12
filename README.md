@@ -21,6 +21,10 @@ A powerful, flexible, and easy-to-use React component for displaying and managin
 - 📦 **TypeScript Support** - Fully typed for better development experience
 - 🎯 **Zero Dependencies** - Except React and MUI (peer dependencies)
 
+## 🌐 Live Demo
+
+Try the component interactively: [React Weekly Timetable Demo](https://react-weekly-timetable.vercel.app/)
+
 ## 📦 Installation
 
 Install via npm:
@@ -517,3 +521,53 @@ react-weekly-timetable/
 - Color customization
 - Event callbacks
 - TypeScript support
+
+## 👨‍💻 Author & Development
+
+**React Weekly Timetable** is created and maintained with care for developers.
+
+### Local Development Setup
+
+To set up the development environment and work on this package locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/react-weekly-timetable.git
+cd react-weekly-timetable
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Build the package
+npm run build
+
+# Preview the built package
+npm run preview
+```
+
+### Development Scripts
+
+- `npm run dev` - Start Vite dev server with hot reload
+- `npm run build` - Build the package for distribution using tsup
+- `npm run preview` - Preview the production build
+
+### Project Info
+
+- **Repository**: [GitHub](https://github.com/dhanushshettigar/react-weekly-timetable)
+- **NPM Package**: [@react-weekly-timetable](https://www.npmjs.com/package/react-weekly-timetable)
+- **Demo**: [Live Demo](https://react-weekly-timetable.vercel.app/)
+
+### Built With
+
+- ⚛️ React
+- 🎨 Material-UI (MUI)
+- 📘 TypeScript
+- ⚡ Vite
+- 📦 tsup
+
+---
+
+Made with ❤️ for developers and schedulers worldwide
