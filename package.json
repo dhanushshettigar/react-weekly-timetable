@@ -1,6 +1,6 @@
 {
   "name": "react-weekly-timetable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A weekly timetable component built with MUI",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
