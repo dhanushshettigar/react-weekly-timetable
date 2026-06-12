@@ -6,5 +6,6 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  external: ['react', 'react-dom', '@mui/material', '@emotion/react', '@emotion/styled'],
+  external: ['react', 'react-dom', '@mui/material', '@mui/icons-material', '@emotion/react', '@emotion/styled'],
+  tsconfig: 'tsconfig.app.json',   // ← point to app tsconfig, not root
 });
