@@ -5,6 +5,8 @@ A powerful, flexible, and easy-to-use React component for displaying and managin
 ![React](https://img.shields.io/badge/React->=17-blue?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Supported-blue?logo=typescript)
 ![License](https://img.shields.io/badge/License-MIT-green)
+[![npm version](https://img.shields.io/npm/v/react-weekly-timetable)](https://www.npmjs.com/package/react-weekly-timetable)
+[![npm downloads](https://img.shields.io/npm/dm/react-weekly-timetable)](https://www.npmjs.com/package/react-weekly-timetable)
 
 ## 🎯 Features
 
