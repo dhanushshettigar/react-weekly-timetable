@@ -110,7 +110,7 @@ const Timetable: React.FC<TimetableProps> = ({
     } | null>(null);
     const [editValue, setEditValue] = useState("");
     const [editColor, _setEditColor] = useState("#e8f5e9");
-    const [editingHeader, _setEditingHeader] = useState<string | null>(null);
+    const [editingHeader, setEditingHeader] = useState<string | null>(null);
     const [headerLabel, setHeaderLabel] = useState("");
     const [headerStartTime, setHeaderStartTime] = useState("");
     const [headerEndTime, setHeaderEndTime] = useState("");
@@ -145,6 +145,7 @@ const Timetable: React.FC<TimetableProps> = ({
         if (!isEditMode) return;
         const slot = timeSlots.find(s => s.id === slotId);
         if (slot) {
+            setEditingHeader(slotId);
             setHeaderLabel(slot.label);
             setHeaderStartTime(slot.startTime);
             setHeaderEndTime(slot.endTime);
@@ -172,6 +173,7 @@ const Timetable: React.FC<TimetableProps> = ({
 
     const handleHeaderClose = () => {
         setOpenHeaderDialog(false);
+        setEditingHeader(null);
     };
 
     const handleClear = () => {
