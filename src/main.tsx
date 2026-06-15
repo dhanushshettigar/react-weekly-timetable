@@ -1,4 +1,5 @@
 import { StrictMode, useState } from "react";
+import { Analytics } from "@vercel/analytics/next"
 import { createRoot } from "react-dom/client";
 import { ThemeProvider, createTheme, CssBaseline, Container, Box, Tabs, Tab, Paper, Typography, Stack, Button, Divider } from "@mui/material";
 import { Timetable } from "./index";
@@ -514,6 +515,7 @@ const MainApp = () => {
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
+      <Analytics />
       <CssBaseline />
       <MainApp />
     </ThemeProvider>
