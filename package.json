@@ -54,5 +54,8 @@
     "weekly",
     "school"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
